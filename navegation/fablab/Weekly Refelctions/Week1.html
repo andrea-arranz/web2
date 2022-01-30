@@ -12,6 +12,7 @@
 .p1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 200pt;
+  color: whitesmoke;
 }
     #navegador ul{
    list-style-type: none;
@@ -20,13 +21,13 @@
 #navegador li{
    display: inline;
    text-align: center;
-   text-decoration-color: black;
+   text-decoration-color: rgb(0, 0, 0);
    margin: 0 80px 0 0;
 }
 #navegador li a {
    padding: 4px 20px 4px 20px;
-   color: rgb(255, 255, 255);
-   background-color: #000000;
+   color: rgb(0, 0, 0);
+   background-color: #ffffff;
    border: none;
    text-decoration: none;
    font-family: sans-serif;
@@ -39,15 +40,23 @@
 .p1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 50pt;
+  color: rgb(0, 0, 0);
+  
 }
 .p2 {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 20pt;
+  font-size: 15pt;
+  color: rgb(0, 0, 0);
 }
 
 .img1{
 display:block;
 margin:auto;
+}
+.img2{
+display:block;
+margin:auto;
+align-items: center;
 }
 .grid-container {
   display: grid;
@@ -66,10 +75,27 @@ margin:auto;
   text-align: center;
 
 }
+img.alineadoTextoImagenArriba{
+  vertical-align: text-top;  
+}
+#columna1 {
+position:absolute;
+top:320px;
+left: 50px;
+width:200px;
+margin-top:10px;
+background-color:#000000;
+}
+#columna2 {
+margin-left:500px;
+margin-right:50px;
+margin-top:10px;
+background-color:#ffffff;
+}
 
   </style>
 </head>
-<body style="background-color: rgb(0, 0, 0);">
+<body style="background-color: rgb(255, 255, 255);">
 
 
   <li><a href="../../../index.html"><img class="img1" src="../../../esc.png" width="50" height="50" alt="escarabajo"></a></li> 
@@ -84,8 +110,19 @@ margin:auto;
       </ul>
       </div>
 
+      <div id="columna1">
+        <img class="alineadoTextoImagenArriba" src="images/img01.png" width="200%" height="200%" />
+      <img class="alineadoTextoImagenArriba" src="images/img02.png" width="200%" height="200%" />
 
+  
+    </div>
+    <div id="columna2">
+<p class="p1"><b>Week 01 reflections.</b></p1>
 
+  <p class="p2">
 
+</p>  
+
+  </div>
 </body>
 </html>

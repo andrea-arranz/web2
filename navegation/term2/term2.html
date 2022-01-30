@@ -49,6 +49,28 @@
 display:block;
 margin:auto;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-decoration-color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+
+}
+.p3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  color:#ff0000;
+}
 
   </style>
 </head>
@@ -59,15 +81,26 @@ margin:auto;
   <div id="navegador">
     <ul>
       <li><a href="../about.html">About</a></li>
-      <li><a href="../term1/term1.html">Term 1</a></li>
+      <li><a href="../term1/term1.html">Seminars</a></li>
       <li><a href="../term2/term2.html">Term 2</a></li>
       <li><a href="../fablab/fablab.html">FabLab</a></li>
       <li><a href="../term3/term3.html">Term 3</a></li>
       <li><a href="../project/project.html">Project</a></li>
       </ul>
       </div>
-
-
+      <div class="grid-container">
+        <div class="grid-item">
+          <a href="seminars/Design Space.html"><img src="images/img01.jpg" width="300" height="300" alt="Design space"></a>
+          <p class="p3"> Design Space</p>
+        </div>
+        <div class="grid-item">
+          <a href="seminars/Making Sense.html"><img src="images/img02.jpg" width="300" height="300" alt="Weak Signals"></a>
+          <p class="p3"> Making Sense</p>
+        </div>
+        <div class="grid-item">
+          <a href="seminars/Design Studio.html"><img src="images/img03.jpg" width="300" height="300" alt="Design Studio"></a>
+          <p class="p3"> Design Studio</p>
+        </div>
 
 
 </body>

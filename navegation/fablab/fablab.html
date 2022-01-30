@@ -39,16 +39,30 @@
 .p1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 50pt;
+  color: rgb(255, 0, 0);
+  
 }
 .p2 {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 20pt;
+  font-size: 15pt;
+  color: rgb(255, 0, 0);
 }
 
 .img1{
 display:block;
 margin:auto;
 }
+#menu * { list-style:none;}
+#menu li{ color:rgb(255, 0, 0);font-family: 'Courier New', Courier, monospace; font-size: 25pt; line-height:180%;}
+#menu li a{color:rgb(255, 0, 0); font-family: 'Courier New', Courier, monospace; font-size: 15pt; text-decoration:rgb(255, 0, 0);}
+#menu input[name="list"] {
+	position: absolute;
+	left: -1000em;
+	}
+#menu label:before{ content:"\025b8"; margin-right:4px;}
+#menu input:checked ~ label:before{ content:"\025be";}
+#menu .interior{display: none;}
+#menu input:checked ~ ul{display:block;}
 
   </style>
 </head>
@@ -59,7 +73,7 @@ margin:auto;
   <div id="navegador">
     <ul>
       <li><a href="../about.html">About</a></li>
-      <li><a href="../term1/term1.html">Term 1</a></li>
+      <li><a href="../term1/term1.html">Seminars</a></li>
       <li><a href="../term2/term2.html">Term 2</a></li>
       <li><a href="../fablab/fablab.html">FabLab</a></li>
       <li><a href="../term3/term3.html">Term 3</a></li>
@@ -67,7 +81,22 @@ margin:auto;
       </ul>
       </div>
 
+      <ul id="menu">
+        <li><input type="checkbox" name="list" id="nivel1-1"><label calss="p1" for="nivel1-1"><b>Weekly Reflections.</b></label>
+        <ul class="interior">
+              <li><a href="Weekly Refelctions/Week1.html" type="checkbox" name="list" id="nivel2-1"><label for="nivel2-1">../week 01</label></a></li>
+              <li><a href="Weekly Refelctions/Week2.html" type="checkbox" name="list" id="nivel2-1"><label for="nivel2-1">../week 02</label></a></li>
+          </ul>
+        </ul>
 
-
+   <ul id="menu">
+    <li><input type="checkbox" name="list" id="nivel1-2"><label calss="p1" for="nivel1-2"><b>Challenges.</b></label>
+    <ul class="interior">
+      <li><a href="Challenges/Challenge1.html" type="checkbox" name="list" id="nivel2-2"><label>../Challenge 1</label></a></li>
+        <li><a href="Challenges/Challenge2.html" type="checkbox" name="list" id="nivel2-2"><label for="nivel2-2">../Challenge 2</label></a></li>
+          <li><a href="Challenges/Challenge3.html" type="checkbox" name="list" id="nivel2-2"><label for="nivel2-2">../Challenge 3</label></a></li>
+            <li><a href="Challenges/Challenge4.html" type="checkbox" name="list" id="nivel2-2"><label for="nivel2-2">../Challenge 4</label></a></li>
+       </ul>
+    </ul>
 </body>
 </html>
